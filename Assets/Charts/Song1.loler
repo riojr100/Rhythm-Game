@@ -1,0 +1,10 @@
+SpawnHoldNote(0,Right,25)
+SpawnHoldNote(0.5,Middle,25)
+SpawnHoldNote(0.9,Left,25)
+SpawnHoldNote(1.45,Middle,25)
+SpawnHoldNote(2.05,Right,25)
+SpawnHoldNote(2.37,Middle,25)
+SpawnHoldNote(2.9,Left,25)
+SpawnHoldNote(3.3,Middle,35)
+
+SpawnNote(6,Middle)
