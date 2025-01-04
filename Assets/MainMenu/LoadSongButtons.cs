@@ -14,7 +14,8 @@ public class LoadSongs : MonoBehaviour
     void Start()
     {
         // string path = Path.Combine(Application.dataPath, "Charts/");
-        string folderPath = "Assets/Charts/";
+        string folderPath = Path.Combine(Application.dataPath, "Charts");
+        // string folderPath = "Assets/Charts/";
         ScanFolder(folderPath);
         // var button = Instantiate(buttonPrefab, ParentPage.transform);
         // button.transform.SetParent(ParentPage.transform);
