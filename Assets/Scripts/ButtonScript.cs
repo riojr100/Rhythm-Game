@@ -22,7 +22,7 @@ public class ButtonScript : MonoBehaviour
     public bool leftHoldPressed = false;
     public bool midHoldPressed = false;
     public bool rightHoldPressed = false;
-
+    public GameObject PauseMenu;
     private void Start()
     {
         leftAnim = leftButt.gameObject.GetComponent<Animator>();
@@ -34,7 +34,17 @@ public class ButtonScript : MonoBehaviour
     IEnumerator rightNotePress;
     private void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (PauseMenu.active)
+            {
+                PauseMenu.SetActive(false);
+            }
+            else
+            {
+                PauseMenu.SetActive(true);
+            }
+        }
         if (rightButt.gameObject.tag == "RightButt" && Input.GetKeyDown(KeyCode.D))
         {
             rightNotePress = RightNotePress(0.05f);
